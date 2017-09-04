@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>cfa1ab2f-f424-4a4b-bb6d-40c19f0db2f4</Guid>
+    <Name>WOTC_Configurable Loot Timer</Name>
+    <Description>Allows loot timers to be defined using a configuration file instead of being hard-coded to 3 turns. Also allows timers to be disabled entirely.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTC_ConfigurableLootTimer</AssemblyName>
+    <RootNamespace>WOTC_ConfigurableLootTimer</RootNamespace>
+    <ProjectGuid>{5399f26b-fc3b-4b81-a261-4213d5a72615}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Config\XComConfigurableLootTimer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComEngine.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModPreview.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_ConfigurableLootTimer\Classes\CLT_ScreenListener_UITacticalHUD.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Src" />
+    <Folder Include="Src\WOTC_ConfigurableLootTimer" />
+    <Folder Include="Src\WOTC_ConfigurableLootTimer\Classes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
